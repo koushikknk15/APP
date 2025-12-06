@@ -14,19 +14,19 @@ public class User {
     private Long userId;
 
     @ManyToOne
-    @JoinColumn(name = "role_id", nullable = false)
+    @JoinColumn(name = "role_id")
     private Role role;
 
-    @Column(name = "user_name", nullable = false, unique = true)
+    @Column(name = "user_name")
     private String userName;
 
-    @Column(name = "password", nullable = false)
+    @Column(name = "password")
     private String password;
 
-    @Column(name = "created_at", updatable = false, insertable = false)
+    @Column(name = "created_at")
     private Timestamp createdAt;
 
-    @Column(name = "updated_at", insertable = false)
+    @Column(name = "updated_at")
     private Timestamp updatedAt;
 
     public Long getUserId() {

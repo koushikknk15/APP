@@ -13,13 +13,13 @@ public class Role {
     @Column(name = "role_id")
     private Long roleId;
 
-    @Column(name = "role_name", nullable = false, unique = true)
+    @Column(name = "role_name")
     private String roleName;
 
-    @Column(name = "created_at", insertable = false, updatable = false)
+    @Column(name = "created_at")
     private Timestamp createdAt;
 
-    @Column(name = "updated_at", insertable = false)
+    @Column(name = "updated_at")
     private Timestamp updatedAt;
 
 }

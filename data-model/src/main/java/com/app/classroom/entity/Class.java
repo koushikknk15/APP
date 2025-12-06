@@ -12,7 +12,7 @@ public class Class {
     @Column(name = "class_id")
     private Long classId;
 
-    @Column(name = "class_name", nullable = false)
+    @Column(name = "class_name")
     private String className;
 
     @Column(name = "section_name")
@@ -21,10 +21,10 @@ public class Class {
     @Column(name = "faculty_id")
     private Long facultyId;   // Foreign key (not mapped with relation because schema doesn't enforce join column relationships)
 
-    @Column(name = "created_at", insertable = false, updatable = false)
+    @Column(name = "created_at")
     private Timestamp createdAt;
 
-    @Column(name = "updated_at", insertable = false)
+    @Column(name = "updated_at")
     private Timestamp updatedAt;
 
     // ---------------- GETTERS & SETTERS ----------------

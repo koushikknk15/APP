@@ -10,13 +10,13 @@ public class Address {
     @Column(name = "address_id")
     private Long addressId;
 
-    @Column(name = "door_no", nullable = false)
+    @Column(name = "door_no")
     private String doorNo;
 
-    @Column(name = "street", nullable = false)
+    @Column(name = "street")
     private String street;
 
-    @Column(name = "village_or_Town", nullable = false)
+    @Column(name = "village_or_Town")
     private String villageOrTown;
 
     @Column(name = "District")
@@ -25,13 +25,13 @@ public class Address {
     @Column(name = "State")
     private String state;
 
-    @Column(name = "pincode", nullable = false)
+    @Column(name = "pincode")
     private String pincode;
 
-    @Column(name = "created_at", insertable = false, updatable = false)
+    @Column(name = "created_at")
     private Timestamp createdAt;
 
-    @Column(name = "updated_at", insertable = false)
+    @Column(name = "updated_at")
     private Timestamp updatedAt;
 
 

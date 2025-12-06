@@ -15,21 +15,21 @@ public class Parent {
     private Long parentId;
 
     @ManyToOne
-    @JoinColumn(name = "user_id", nullable = false)
-    private User user;  // FK to USERS table
+    @JoinColumn(name = "user_id")
+    private User user;
 
     @ManyToOne
-    @JoinColumn(name = "student_id", nullable = false)
-    private Student student;  // FK to STUDENTS table
+    @JoinColumn(name = "student_id")
+    private Student student;
 
     @ManyToOne
     @JoinColumn(name = "address_id")
-    private Address address;  // FK to ADDRESS table
+    private Address address;
 
-    @Column(name = "father_name", nullable = false)
+    @Column(name = "father_name")
     private String fatherName;
 
-    @Column(name = "mother_name", nullable = false)
+    @Column(name = "mother_name")
     private String motherName;
 
     @Column(name = "father_ph_no")
@@ -47,10 +47,10 @@ public class Parent {
     @Column(name = "aadhar_number")
     private String aadharNumber;
 
-    @Column(name = "created_at", updatable = false, insertable = false)
+    @Column(name = "created_at")
     private Timestamp createdAt;
 
-    @Column(name = "updated_at", insertable = false)
+    @Column(name = "updated_at")
     private Timestamp updatedAt;
 
     public Long getParentId() {

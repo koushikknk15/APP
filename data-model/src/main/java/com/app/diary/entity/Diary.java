@@ -12,25 +12,23 @@ public class Diary {
     @Column(name = "task_id")
     private Long taskId;
 
-    @Column(name = "class_id", nullable = false)
+    @Column(name = "class_id")
     private Long classId;
 
-    @Column(name = "task_detail", nullable = false, length = 3000)
+    @Column(name = "task_detail")
     private String taskDetail;
 
     @Column(name = "section_name")
     private String sectionName;
 
-    @Column(name = "notification_id", unique = true)
+    @Column(name = "notification_id")
     private Long notificationId;
 
-    @Column(name = "created_at", insertable = false, updatable = false)
+    @Column(name = "created_at")
     private Timestamp createdAt;
 
-    @Column(name = "updated_at", insertable = false)
+    @Column(name = "updated_at")
     private Timestamp updatedAt;
-
-    // ---------------- GETTERS & SETTERS ----------------
 
     public Long getTaskId() {
         return taskId;
